@@ -1,0 +1,3 @@
+public enum Direction {
+    UPPER_LEFT, UPPER_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+}
