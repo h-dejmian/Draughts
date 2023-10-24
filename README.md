@@ -12,7 +12,7 @@ When one of the players is out of pawns, than the game is over and program shows
 # Launch
 To run the gane:
 - clone repository
-- run Main in your IDE
+- run Main file in your IDE
 
 # Requirements
 - Java 17
