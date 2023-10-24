@@ -179,8 +179,7 @@ public class Board {
             }
             placeOnOddFactor ^= 1;
         }
-        board[4][1] = new Pawn(new Coordinates(4, 1), Color.WHITE);
-        board[7][2] = null;
+
         return board;
     }
 
@@ -200,7 +199,8 @@ public class Board {
 
             for (int j = 0; j < fields[0].length; j++) {
                 if (fields[i][j] == null) System.out.print(backgrounds[backgroundIndex] + "   " + ConsoleColors.RESET);
-                else System.out.print(backgrounds[backgroundIndex] + " " + fields[i][j] + backgrounds[backgroundIndex] + " " + ConsoleColors.RESET);
+                else
+                    System.out.print(backgrounds[backgroundIndex] + " " + fields[i][j] + backgrounds[backgroundIndex] + " " + ConsoleColors.RESET);
                 backgroundIndex ^= 1;
             }
             backgroundIndex ^= 1;
@@ -210,9 +210,9 @@ public class Board {
             System.out.println();
         }
         System.out.println(players[0] + " beaten paws: " + players[0].getBeatenPaws() + " |" +
-                                        " best combo: " + players[0].getBestCombo());
+                " best combo: " + players[0].getBestCombo());
         System.out.println(players[1] + " beaten paws: " + players[1].getBeatenPaws() + " |" +
-                                        " best combo: " + players[1].getBestCombo());
+                " best combo: " + players[1].getBestCombo());
         System.out.println();
 
         if (!message.equals("")) {

@@ -2,17 +2,13 @@ import java.awt.*;
 import java.util.Scanner;
 
 public class Game {
-
+    private static final int FIELD_SIZE = 10;
     public void start() {
         Scanner scanner = new Scanner(System.in);
 
         printWelcomeMessage();
 
-        System.out.println("Please provide board size [10-20]:");
-        int fieldSize = scanner.nextInt();
-        scanner.nextLine();
-
-        Board board = new Board(fieldSize);
+        Board board = new Board(FIELD_SIZE);
         Player[] players = getPlayers(scanner);
 
         board.printBoard(players);
